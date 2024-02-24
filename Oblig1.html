@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestilling av Kinobiletter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Bestilling av Kinobiletter</h1>
+<div id="movieSelection">
+    <h2>Velg film: </h2>
+    <!-- Movie selection scroll bar goes here -->
+
+    <select id="movieSelect">
+        <option value="movie1">Movie 1</option>
+        <option value="movie2">Movie 2</option>
+        <option value="movie3">Movie 3</option>
+        <!-- Add more options as needed -->
+    </select>
+</div>
+<div id="ticketInfo">
+    <h2>Antall biletter</h2>
+    <input type="number" id="ticketQuantity" placeholder="Velg antall">
+    <br>
+    <input type="text" id="firstName" placeholder="Navn">
+    <br>
+    <input type="text" id="lastName" placeholder="Etternavn">
+    <br>
+    <input type="tel" id="phoneNumber" placeholder="Telefon">
+    <br>
+    <input type="email" id="email" placeholder="Email">
+    <br>
+    <button onclick="purchaseTickets()">Purchase tickets</button>
+</div>
+<div id="allTickets">
+    <h2>Alle biletter</h2>
+    <!-- List of tickets goes here -->
+    <button onclick="deleteAllTickets()">Slett alle biletter</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
